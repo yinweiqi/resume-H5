@@ -7,7 +7,6 @@ $(document).ready(function () {
     spaceBetween: 30,
     mousewheelControl: true,
     onTransitionStart: function(swiper){
-      console.log('.page'+ (+swiper.activeIndex +1));
       $('.warp').hide();
       $('.page'+ (+swiper.activeIndex +1)).find('.warp').show();
     }
